@@ -16,4 +16,7 @@ class HomeController extends GetxController {
       return data.map((e) => Surah.fromJson(e)).toList();
     }
   }
+
+  // Get Detail Surah
+
 }
