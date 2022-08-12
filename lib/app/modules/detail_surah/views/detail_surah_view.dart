@@ -14,6 +14,7 @@ class DetailSurahView extends GetView<DetailSurahController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.brown[100],
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: ListView(
@@ -56,9 +57,12 @@ class DetailSurahView extends GetView<DetailSurahController> {
             ),
             Expanded(
                 child: TabBar(
+              labelStyle:
+                  const TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
+              unselectedLabelColor: Colors.grey,
               controller: _tabx.controller,
               tabs: _tabx.myTabs,
-              indicatorColor: Colors.brown[200],
+              indicatorColor: Colors.brown[300],
               labelColor: Colors.black,
             )),
             SizedBox(
@@ -109,7 +113,7 @@ class DetailSurahView extends GetView<DetailSurahController> {
                         height: 10,
                       ),
                       Card(
-                        color: Colors.brown[100],
+                        color: Colors.brown[200],
                         child: Padding(
                           padding: const EdgeInsets.symmetric(
                               vertical: 5, horizontal: 10),
